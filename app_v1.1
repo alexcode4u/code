@@ -153,10 +153,9 @@ Screen:
         left_action_items: [["menu", lambda x: nav_drawer.set_state("open")]]
 
     NavigationLayout:
-
+        size_hint_y: None
+        height: root.height - toolbar.height
         My_Screen_Manager:
-            size_hint_y: None
-            height: root.height - toolbar.height
             id: manager
             Screen:
                 name: 'settings'
